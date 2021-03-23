@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune</title>
+</head>
+<body>
+    <script>
+        let userInput=window.prompt('Do you want to know your future? Yes or No?')
+        userInput=userInput.toLocaleLowerCase;
+        fortunes=['You will win the lottery','Be cautious, you will lose everything','You will find your true love','You will never find love'];
+        if (userInput==='yes') {
+            alert(fortunes(Math.random()*fortunes.length)]);
+        } else {
+            alert("Maybe next time!");
+        }
+    </script>
+</body>
+</html>

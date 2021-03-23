@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const careers=['Photographer', 'Mailman', 'Nurse', 'Truck Driver'];
+        const cities=['Milwaukee','Chicago','Bay Minette','Jonesboro'];
+        const relationshipStatuses=['Married','Single','Divorced','In a relationship'];
+        const wealthStatement=['Sugar Daddy rich','Big rich','Comfortable', 'Broke as a joke'];
+
+        let career=careers[math.floor(math.random(careers)*4)];
+        let wealth=wealthStatement[math.floor(math.random()*4)];
+        let relationshipStatus=relationshipStatuses[Math.floor(Math.random()*4)];
+        let wealth=wealthStatment[Math.floor(Math.random()*4)];
+
+        let userInput=window.prompt('Do you want to know your future? Yes or No?');
+
+        userInput=userInput.toLocaleLowerCase();
+        if(userInput==='yes'){
+            alert('You will be a ' +career+ ' in ' +city+ ' + relationshipStatus+ ' and have ' + wealth')
+        } else{
+            alert("Maybe next time!");
+        };
+    </script>
+    
+</body>
+</html>
